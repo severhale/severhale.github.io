@@ -1,0 +1,49 @@
+html {
+    font-family: 'Inconsolata', monospace;
+    body {
+        .page {
+            height: 100vh;
+            .titlebox-container {
+                text-align: center;
+                .titlebox {
+                    border: 5px solid black;
+                    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
+                    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
+                    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
+                    margin-bottom: 20px;
+                }
+            }
+            .next-page {
+                position: fixed;
+                bottom: 100%;
+            }
+        }
+        #splash {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .titlebox-container {
+                #splashbox {
+                    #splashbox-content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        border-left: 3px solid black;
+                        border-right: 3px solid black;
+                        margin: 15px;
+                        padding: 0 15px;
+                        text-align: center;
+                    }
+                }
+                #contact {
+                    text-align: left;
+                    padding-left: 20px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
