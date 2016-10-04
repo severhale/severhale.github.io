@@ -1,11 +1,19 @@
 html {
   font-family: 'Inconsolata', monospace;
   font-size: 2vw; }
+  html #canvas {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0; }
   html body .page {
     height: 100vh; }
     html body .page .titlebox-container {
       text-align: center; }
       html body .page .titlebox-container .titlebox {
+        background: rgba(255, 255, 255, 0.7);
         border: 5px solid black;
         -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
         -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
@@ -44,7 +52,7 @@ html {
 
 @media screen and (max-width: 736px) {
   html {
-    font-size: 3vw;
+    font-size: 4vw;
     /* Base font-size of 32px */ } }
 
 /*# sourceMappingURL=main.css.map */
