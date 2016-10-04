@@ -54,8 +54,5 @@ html {
   html {
     font-size: 4vw;
     /* Base font-size of 32px */ } }
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 5vw; } }
 
 /*# sourceMappingURL=main.css.map */
