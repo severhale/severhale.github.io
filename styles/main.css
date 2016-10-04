@@ -1,5 +1,6 @@
 html {
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Inconsolata', monospace;
+  font-size: 2vw; }
   html body .page {
     height: 100vh; }
     html body .page .titlebox-container {
@@ -41,7 +42,7 @@ html {
   html h4 {
     font-size: 1.1em; }
 
-@media screen and (min-width: 320px) and (max-width: 736px) {
+@media screen and (max-width: 736px) {
   html {
     font-size: 3vw;
     /* Base font-size of 32px */ } }

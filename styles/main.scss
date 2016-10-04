@@ -1,5 +1,6 @@
 html {
     font-family: 'Inconsolata', monospace;
+    font-size: 2vw;
     body {
         .page {
             height: 100vh;
@@ -67,7 +68,7 @@ html {
 //    }
 //}
 //
-@media screen and (min-width: 320px) and (max-width:736px) {
+@media screen and (max-width:736px) {
     html {
         font-size: 3vw;
         /* Base font-size of 32px */
