@@ -50,9 +50,12 @@ html {
   html h4 {
     font-size: 1.1em; }
 
-@media screen and (max-width: 736px) {
+@media screen and (min-width: 500px) and (max-width: 736px) {
   html {
     font-size: 4vw;
     /* Base font-size of 32px */ } }
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 5vw; } }
 
 /*# sourceMappingURL=main.css.map */
