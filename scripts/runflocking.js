@@ -3,7 +3,7 @@ window.onload = function () {
     var canvas = document.getElementById('canvas');
     paper.setup(canvas);
     var flocks = [];
-    var numFlocks = 3;
+    var numFlocks = 2;
     var attract = true;
     var count = 0;
     for (var i = 0; i < numFlocks; i++) {
