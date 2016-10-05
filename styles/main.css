@@ -8,11 +8,18 @@ html {
     position: absolute;
     top: 0;
     left: 0; }
+  html body .page.active {
+    opacity: 1; }
   html body .page {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 0 10%; }
+    padding: 0 10%;
+    opacity: 0;
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s; }
     html body .page .titlebox-container {
       text-align: center;
       align-self: flex-start; }

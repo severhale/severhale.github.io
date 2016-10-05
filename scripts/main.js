@@ -1,3 +1,4 @@
 $(".pages").onepage_scroll({
-    sectionContainer: "div.page"
+    sectionContainer: "div.page",
+    loop: false
 });
