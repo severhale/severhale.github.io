@@ -90,7 +90,7 @@ html {
   html h4 {
     font-size: 1.1em; }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 500px) {
   html {
     font-size: 140%;
     /* Base font-size of 32px */ } }
