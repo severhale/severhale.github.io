@@ -10,13 +10,15 @@ html {
         left: 0;
     }
     body {
+        //        .pages {
         .page {
             display: flex;
             flex-direction: column;
-            position: relative;
-            height: 100vh;
+            height: 100%;
+            padding: 0 10%;
             .titlebox-container {
                 text-align: center;
+                align-self: flex-start;
                 .titlebox {
                     background: rgba(255, 255, 255, .7);
                     border: 5px solid black;
@@ -24,20 +26,24 @@ html {
                     -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
                     box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
                     margin-bottom: 20px;
+                    .pagetitle {
+                        margin: 0;
+                        padding: 15px;
+                    }
                 }
             }
-            .next-page {
-                font-size: 1.5em;
-                position: absolute;
-                align-self: center;
-                bottom: 10px;
-                cursor: default;
+            p {
+                overflow: visible;
+                flex-grow: 1;
             }
         }
         #splash {
             align-items: center;
             justify-content: center;
+            width: 100%;
+            padding: 0;
             .titlebox-container {
+                align-self: center;
                 #splashbox {
                     #splashbox-content {
                         display: flex;
@@ -60,6 +66,7 @@ html {
                 }
             }
         }
+        //        }
     }
     h1 {
         font-size: 2em;

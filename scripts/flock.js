@@ -3,8 +3,9 @@ var Flock = function (size) {
     var particles = [];
     var springs = [];
     var targetSeed = Math.random() * 255;
+    var seed = Math.random() * 255;
     var target = new Point(noise.perlin2(targetSeed, 0) * view.size.width, noise.perlin2(targetSeed + 128, 128) * view.size.height);
-    var speed = .005;
+    var speed = .003;
     var color = new Color(Math.random() * .6, Math.random() * .6, Math.random() * .6);
     for (var i = 0; i < size; i++) {
         var p = new Particle(Math.random() * view.size.width, Math.random() * view.size.height, 0, 0);
@@ -113,7 +114,7 @@ var Flock = function (size) {
         }
     }
 
-    var update = function (count, mousePos = null) {
+    var update = function (delta = null) {
         //        initGrid();
         for (var i = 0; i < particles.length; i++) {
             var p = particles[i];
@@ -124,7 +125,7 @@ var Flock = function (size) {
             p.springTo(target, springs[i].c, springs[i].l);
             var v = p.getVel();
             var perpForce = new Point(-v.y, v.x);
-            perpForce = perpForce.multiply(.01 * Math.sin(.1 * count + .1 * i));
+            perpForce = perpForce.multiply(.01 * Math.sin(.1 * seed + .1 * i));
             p.applyForce(perpForce)
             p.update();
 
@@ -148,12 +149,13 @@ var Flock = function (size) {
             //                newEntry.push(p);
             //            }
         }
-        if (mousePos === null) {
-            target.x = (noise.perlin2(targetSeed, count * speed) + .5) * view.size.width;
-            target.y = (noise.perlin2(targetSeed + 128, count * speed + 128) + .5) * view.size.height;
+        target.x = (noise.perlin2(targetSeed, seed) + .5) * view.size.width;
+        target.y = (noise.perlin2(targetSeed + 128, seed + 128) + .5) * view.size.height;
+        if (delta === null) {
+            seed += speed;
         } else {
-            target.x = mousePos.x;
-            target.y = mousePos.y;
+            var deltaSpeed = delta.length;
+            seed += speed * deltaSpeed / 10;
         }
     };
 

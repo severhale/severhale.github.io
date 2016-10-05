@@ -11,10 +11,11 @@ html {
   html body .page {
     display: flex;
     flex-direction: column;
-    position: relative;
-    height: 100vh; }
+    height: 100%;
+    padding: 0 10%; }
     html body .page .titlebox-container {
-      text-align: center; }
+      text-align: center;
+      align-self: flex-start; }
       html body .page .titlebox-container .titlebox {
         background: rgba(255, 255, 255, 0.7);
         border: 5px solid black;
@@ -22,30 +23,34 @@ html {
         -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
         margin-bottom: 20px; }
-    html body .page .next-page {
-      font-size: 1.5em;
-      position: absolute;
-      align-self: center;
-      bottom: 10px;
-      cursor: default; }
+        html body .page .titlebox-container .titlebox .pagetitle {
+          margin: 0;
+          padding: 15px; }
+    html body .page p {
+      overflow: visible;
+      flex-grow: 1; }
   html body #splash {
     align-items: center;
-    justify-content: center; }
-    html body #splash .titlebox-container #splashbox #splashbox-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      border-left: 3px solid black;
-      border-right: 3px solid black;
-      margin: 15px;
-      padding: 0 15px;
-      text-align: center; }
-    html body #splash .titlebox-container #contact {
-      text-align: left;
-      padding-left: 20px; }
-      html body #splash .titlebox-container #contact img {
-        width: 32px;
-        height: 32px; }
+    justify-content: center;
+    width: 100%;
+    padding: 0; }
+    html body #splash .titlebox-container {
+      align-self: center; }
+      html body #splash .titlebox-container #splashbox #splashbox-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        margin: 15px;
+        padding: 0 15px;
+        text-align: center; }
+      html body #splash .titlebox-container #contact {
+        text-align: left;
+        padding-left: 20px; }
+        html body #splash .titlebox-container #contact img {
+          width: 32px;
+          height: 32px; }
   html h1 {
     font-size: 2em; }
   html h2 {
