@@ -130,15 +130,9 @@ html {
 //    }
 //}
 //
-@media screen and (max-width:500px) {
+@media screen and (max-width:736px) {
     html {
-        font-size: 140%;
-        h1 {
-            font-size: 1.5em;
-        }
-        h2 {
-            font-size: 1.3em;
-        }
+        font-size: 4vw;
         /* Base font-size of 32px */
     }
 }
