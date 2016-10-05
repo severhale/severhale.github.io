@@ -21,6 +21,7 @@ html {
     box-sizing: border-box;
     padding: 0 10%;
     opacity: 0;
+    position: relative;
     -webkit-transition: opacity .6s;
     -moz-transition: opacity .6s;
     -o-transition: opacity .6s;
@@ -41,7 +42,7 @@ html {
       width: 75px;
       height: 75px;
       border-radius: 50%;
-      position: relative;
+      position: absolute;
       top: 10px;
       align-self: center; }
     html body .page p {
