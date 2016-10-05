@@ -104,8 +104,10 @@ html {
         #hi {
             .titlebox-container {
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
+                display: -webkit-flex;
+display: flex;
+-webkit-justify-content: space-between;
+justify-content: space-between;
                 #profile-image {
                     width: 75px;
                     height: 75px;
