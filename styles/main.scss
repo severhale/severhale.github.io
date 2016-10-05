@@ -11,6 +11,9 @@ html {
     }
     body {
         .page {
+            display: flex;
+            flex-direction: column;
+            position: relative;
             height: 100vh;
             .titlebox-container {
                 text-align: center;
@@ -24,12 +27,14 @@ html {
                 }
             }
             .next-page {
-                position: fixed;
-                bottom: 100%;
+                font-size: 1.5em;
+                position: absolute;
+                align-self: center;
+                bottom: 10px;
+                cursor: default;
             }
         }
         #splash {
-            display: flex;
             align-items: center;
             justify-content: center;
             .titlebox-container {

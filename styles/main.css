@@ -9,6 +9,9 @@ html {
     top: 0;
     left: 0; }
   html body .page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     height: 100vh; }
     html body .page .titlebox-container {
       text-align: center; }
@@ -20,10 +23,12 @@ html {
         box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.8);
         margin-bottom: 20px; }
     html body .page .next-page {
-      position: fixed;
-      bottom: 100%; }
+      font-size: 1.5em;
+      position: absolute;
+      align-self: center;
+      bottom: 10px;
+      cursor: default; }
   html body #splash {
-    display: flex;
     align-items: center;
     justify-content: center; }
     html body #splash .titlebox-container #splashbox #splashbox-content {
