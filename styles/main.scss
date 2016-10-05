@@ -22,8 +22,9 @@ html {
         }
         .page {
             display: flex;
+            display: -webkit-flex;
             flex-direction: column;
-            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
             align-items: flex-start;
             height: 100%;
             -webkit-box-sizing: border-box;
@@ -82,6 +83,7 @@ html {
                 #splashbox {
                     #splashbox-content {
                         display: flex;
+                        display: -webkit-flex;
                         flex-direction: column;
                         justify-content: space-around;
                         border-left: 3px solid $border-color;
@@ -105,9 +107,10 @@ html {
             .titlebox-container {
                 width: 100%;
                 display: -webkit-flex;
-display: flex;
--webkit-justify-content: space-between;
-justify-content: space-between;
+                display: flex;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                align-items: flex-start;
                 #profile-image {
                     width: 75px;
                     height: 75px;
