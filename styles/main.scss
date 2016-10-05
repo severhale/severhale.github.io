@@ -24,20 +24,18 @@ html {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
             height: 100%;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             padding: 0 10%;
             opacity: 0;
-            position: relative;
             -webkit-transition: opacity .6s;
             -moz-transition: opacity .6s;
             -o-transition: opacity .6s;
             transition: opacity .6s;
             .titlebox-container {
-                align-self: flex-start;
                 text-align: center;
                 .titlebox {
                     background: $box-color;
@@ -51,13 +49,6 @@ html {
                         padding: 15px;
                     }
                 }
-            }
-            #profile-image {
-                width: 75px;
-                height: 75px;
-                border-radius: 50%;
-                position: absolute;
-                top: 10px;
             }
             p {
                 overflow: visible;
@@ -107,6 +98,20 @@ html {
                         width: 32px;
                         height: 32px;
                     }
+                }
+            }
+        }
+        #hi {
+            .titlebox-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                #profile-image {
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                    padding: 10px;
+                    margin: auto;
                 }
             }
         }

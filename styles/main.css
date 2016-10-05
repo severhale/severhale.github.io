@@ -14,20 +14,18 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10%;
     opacity: 0;
-    position: relative;
     -webkit-transition: opacity .6s;
     -moz-transition: opacity .6s;
     -o-transition: opacity .6s;
     transition: opacity .6s; }
     html body .page .titlebox-container {
-      align-self: flex-start;
       text-align: center; }
       html body .page .titlebox-container .titlebox {
         background: rgba(255, 255, 255, 0.7);
@@ -39,12 +37,6 @@ html {
         html body .page .titlebox-container .titlebox .pagetitle {
           margin: 0;
           padding: 15px; }
-    html body .page #profile-image {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      position: absolute;
-      top: 10px; }
     html body .page p {
       overflow: visible; }
       html body .page p a {
@@ -82,6 +74,16 @@ html {
         html body #splash .titlebox-container #contact img {
           width: 32px;
           height: 32px; }
+  html body #hi .titlebox-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    html body #hi .titlebox-container #profile-image {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      padding: 10px;
+      margin: auto; }
   html h1 {
     font-size: 1.7em; }
   html h2 {
