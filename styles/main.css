@@ -14,7 +14,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -27,6 +27,7 @@ html {
     -o-transition: opacity .6s;
     transition: opacity .6s; }
     html body .page .titlebox-container {
+      align-self: flex-start;
       text-align: center; }
       html body .page .titlebox-container .titlebox {
         background: rgba(255, 255, 255, 0.7);
@@ -43,8 +44,7 @@ html {
       height: 75px;
       border-radius: 50%;
       position: absolute;
-      top: 10px;
-      align-self: center; }
+      top: 10px; }
     html body .page p {
       overflow: visible; }
       html body .page p a {
