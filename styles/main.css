@@ -93,6 +93,10 @@ html {
 @media screen and (max-width: 500px) {
   html {
     font-size: 140%;
-    /* Base font-size of 32px */ } }
+    /* Base font-size of 32px */ }
+    html h1 {
+      font-size: 1.5em; }
+    html h2 {
+      font-size: 1.3em; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -133,6 +133,12 @@ html {
 @media screen and (max-width:500px) {
     html {
         font-size: 140%;
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
         /* Base font-size of 32px */
     }
 }
