@@ -1,174 +1,105 @@
 html {
-    font-family: 'Inconsolata', monospace;
-    font-size: 120%;
-}
-
-html #canvas {
+  font-family: 'Inconsolata', monospace;
+  font-size: 120%; }
+  html #canvas {
     width: 100%;
     height: 100%;
     z-index: -1;
     position: absolute;
     top: 0;
-    left: 0;
-}
-
-html body .page.active {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-html body .page {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    left: 0; }
+  html body .page.active {
+    opacity: 1; }
+  html body .page {
     display: flex;
     display: -webkit-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
     height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10%;
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-transition: opacity .6s;
-    transition: opacity .6s;
-}
-
-html body .page .titlebox-container {
-    text-align: center;
-}
-
-html body .page .titlebox-container .titlebox {
-    background: rgba(255, 255, 255, 0.7);
-    border: 5px solid black;
-    box-shadow: 10px 10px 0px 0px #3498db;
-    margin-bottom: 20px;
-}
-
-html body .page .titlebox-container .titlebox .pagetitle {
-    margin: 0;
-    padding: 15px;
-}
-
-html body .page p {
-    overflow: visible;
-}
-
-html body .page p a {
-    color: black;
-}
-
-html body .page p a:hover {
-    background: #3498db;
-}
-
-html body .page #portfolio-link {
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-
-html body .page #portfolio-link a {
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    border: 2px dotted black;
-}
-
-html body .page #portfolio-link a:hover {
-    background: #3498db;
-}
-
-html body #splash {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s; }
+    html body .page .titlebox-container {
+      text-align: center; }
+      html body .page .titlebox-container .titlebox {
+        background: rgba(255, 255, 255, 0.7);
+        border: 5px solid black;
+        -webkit-box-shadow: 10px 10px 0px 0px #3498db;
+        -moz-box-shadow: 10px 10px 0px 0px #3498db;
+        box-shadow: 10px 10px 0px 0px #3498db;
+        margin-bottom: 20px; }
+        html body .page .titlebox-container .titlebox .pagetitle {
+          margin: 0;
+          padding: 15px; }
+    html body .page p {
+      overflow: visible; }
+      html body .page p a {
+        color: black; }
+      html body .page p a:hover {
+        background: #3498db; }
+    html body .page #portfolio-link {
+      align-self: center; }
+      html body .page #portfolio-link a {
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+        border: 2px dotted black; }
+      html body .page #portfolio-link a:hover {
+        background: #3498db; }
+  html body #splash {
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    padding: 0;
-}
-
-html body #splash .titlebox-container {
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-
-html body #splash .titlebox-container #splashbox #splashbox-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    margin: 15px;
-    padding: 0 15px;
-    text-align: center;
-}
-
-html body #splash .titlebox-container #contact {
-    text-align: left;
-    padding-left: 20px;
-}
-
-html body #splash .titlebox-container #contact img {
-    width: 32px;
-    height: 32px;
-}
-
-html body #hi .titlebox-container {
+    padding: 0; }
+    html body #splash .titlebox-container {
+      align-self: center; }
+      html body #splash .titlebox-container #splashbox #splashbox-content {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        margin: 15px;
+        padding: 0 15px;
+        text-align: center; }
+      html body #splash .titlebox-container #contact {
+        text-align: left;
+        padding-left: 20px; }
+        html body #splash .titlebox-container #contact img {
+          max-height: 32px; }
+  html body #hi .titlebox-container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
-html body #hi .titlebox-container #profile-image {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    padding: 10px;
-    margin: auto;
-}
-
-html h1 {
-    font-size: 1.7em;
-}
-
-html h2 {
-    font-size: 1.5em;
-}
-
-html h3 {
-    font-size: 1.3em;
-}
-
-html h4 {
-    font-size: 1.1em;
-}
+    align-items: flex-start; }
+    html body #hi .titlebox-container #profile-image {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      padding: 10px;
+      margin: auto; }
+  html h1 {
+    font-size: 1.7em; }
+  html h2 {
+    font-size: 1.5em; }
+  html h3 {
+    font-size: 1.3em; }
+  html h4 {
+    font-size: 1.1em; }
 
 @media screen and (max-width: 736px) {
-    html {
-        font-size: 4.2vm;
-        font-size: 4.2vmin;
-        /* Base font-size of 32px */
-    }
-}
+  html {
+    font-size: 4.2vmin;
+    /* Base font-size of 32px */ } }
+
+/*# sourceMappingURL=main.css.map */
