@@ -44,14 +44,15 @@ html {
         color: black; }
       html body .page p a:hover {
         background: #3498db; }
-    html body .page #portfolio-link {
-      align-self: center; }
-      html body .page #portfolio-link a {
+    html body .page .portfolio-link {
+      align-self: center;
+      margin-bottom: 1em; }
+      html body .page .portfolio-link a {
         padding: 5px;
         text-decoration: none;
         color: black;
         border: 2px dotted black; }
-      html body .page #portfolio-link a:hover {
+      html body .page .portfolio-link a:hover {
         background: #3498db; }
   html body #splash {
     align-items: center;

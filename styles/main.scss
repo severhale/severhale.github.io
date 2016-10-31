@@ -60,8 +60,9 @@ html {
                     background: $secondary-color;
                 }
             }
-            #portfolio-link {
+            .portfolio-link {
                 align-self: center;
+                margin-bottom: 1em;
                 a {
                     padding: 5px;
                     text-decoration: none;
