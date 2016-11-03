@@ -4,7 +4,7 @@ $text-color: $primary-color;
 $box-color: rgba(255, 255, 255, .7);
 $border-color: $primary-color;
 $shadow-color: $secondary-color;
-$link-color: $box-color;
+$link-color: #EB9486;
 html {
     font-family: 'Inconsolata', monospace;
     font-size: 120%;
@@ -17,6 +17,12 @@ html {
         left: 0;
     }
     body {
+        a {
+            color: $text-color;
+        }
+        a:hover {
+            background: $link-color;
+        }
         .page.active {
             opacity: 1;
         }
@@ -53,12 +59,6 @@ html {
             }
             p {
                 overflow: visible;
-                a {
-                    color: $text-color;
-                }
-                a:hover {
-                    background: $secondary-color;
-                }
             }
             .portfolio-link {
                 align-self: center;
@@ -68,9 +68,6 @@ html {
                     text-decoration: none;
                     color: $text-color;
                     border: 2px dotted $border-color;
-                }
-                a:hover {
-                    background: $secondary-color;
                 }
             }
         }
@@ -97,8 +94,16 @@ html {
                 #contact {
                     text-align: left;
                     padding-left: 20px;
-                    img {
-                        max-height: 32px;
+                    .icons {
+                        a {
+                            img {
+                                max-height: 32px;
+                            }
+                            &:hover {
+                                background: none;
+                                border-bottom: 2px solid $link-color;
+                            }
+                        }
                     }
                 }
             }

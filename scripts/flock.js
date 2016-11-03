@@ -13,8 +13,8 @@ var Flock = function (size) {
         p.setColor(color.add(new Color(Math.random() * .2 - .1, Math.random() * .2 - .1, Math.random() * .2 - .1)));
         particles.push(p);
         springs.push({
-            c: Math.random() * .005 + .005,
-            l: Math.random() * 50 + 10,
+            c: Math.random() * .007 + .002,
+            l: Math.random() * 40 + 10,
         });
     }
 
@@ -126,7 +126,7 @@ var Flock = function (size) {
             p.springTo(target, springs[i].c, springs[i].l);
             var v = p.getVel();
             var perpForce = new Point(-v.y, v.x);
-            perpForce = perpForce.multiply(.01 * Math.sin(.1 * seed + .1 * i));
+            perpForce = perpForce.multiply(.0075 * Math.sin(.1 * seed + .1 * i));
             p.applyForce(perpForce)
             p.update();
 

@@ -8,6 +8,10 @@ html {
     position: absolute;
     top: 0;
     left: 0; }
+  html body a {
+    color: black; }
+  html body a:hover {
+    background: #EB9486; }
   html body .page.active {
     opacity: 1; }
   html body .page {
@@ -40,10 +44,6 @@ html {
           padding: 15px; }
     html body .page p {
       overflow: visible; }
-      html body .page p a {
-        color: black; }
-      html body .page p a:hover {
-        background: #3498db; }
     html body .page .portfolio-link {
       align-self: center;
       margin-bottom: 1em; }
@@ -52,8 +52,6 @@ html {
         text-decoration: none;
         color: black;
         border: 2px dotted black; }
-      html body .page .portfolio-link a:hover {
-        background: #3498db; }
   html body #splash {
     align-items: center;
     justify-content: center;
@@ -74,8 +72,11 @@ html {
       html body #splash .titlebox-container #contact {
         text-align: left;
         padding-left: 20px; }
-        html body #splash .titlebox-container #contact img {
+        html body #splash .titlebox-container #contact .icons a img {
           max-height: 32px; }
+        html body #splash .titlebox-container #contact .icons a:hover {
+          background: none;
+          border-bottom: 2px solid #EB9486; }
   html body #hi .titlebox-container {
     width: 100%;
     display: -webkit-flex;
